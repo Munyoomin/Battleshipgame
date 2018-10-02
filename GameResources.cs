@@ -5,6 +5,7 @@ namespace battleshipsgame
 {
 	public class GameResources
 	{
+		//adding fonts to library or resource
 		private static void LoadFonts()
 		{
 			GameResources.NewFont("ArialLarge", "arial.ttf", 80);
@@ -13,6 +14,7 @@ namespace battleshipsgame
 			GameResources.NewFont("Menu", "ffaccess.ttf", 8);
 		}
 
+		//adding images to library
 		private static void LoadImages()
 		{
 			// Backgrounds
@@ -40,6 +42,7 @@ namespace battleshipsgame
 			GameResources.NewImage("Splash", "splash.png");
 		}
 
+		//adding sounds to library
 		private static void LoadSounds()
 		{
 			GameResources.NewSound("Error", "error.wav");
@@ -51,6 +54,7 @@ namespace battleshipsgame
 			GameResources.NewSound("Lose", "lose.wav");
 		}
 
+		//adding music to library
 		private static void LoadMusic()
 		{
 			GameResources.NewMusic("Background", "horrordrone.mp3");
@@ -146,6 +150,8 @@ namespace battleshipsgame
 			GameResources.EndLoadingScreen(width, height);
 		}
 
+		//setting loading screen behaviour
+		//load images, sound and font to loading screen
 		private static void ShowLoadingScreen()
 		{
 			_Background = SwinGame.LoadBitmap(SwinGame.PathToResource("SplashBack.png", ResourceKind.BitmapResource));
@@ -160,6 +166,9 @@ namespace battleshipsgame
 			GameResources.PlaySwinGameIntro();
 		}
 
+		//setting intro screen
+		//set screen size (width and height)
+		//load sound effects and animation
 		private static void PlaySwinGameIntro()
 		{
 			const int ANI_CELL_COUNT = 11;
@@ -190,6 +199,8 @@ namespace battleshipsgame
 			SwinGame.Delay(1500);
 		}
 
+		//setting screen size (width and height)
+		//show message on the screen
 		private static void ShowMessage(string message, int number)
 		{
 			const int BG_Y = 453;
@@ -209,6 +220,10 @@ namespace battleshipsgame
 			SwinGame.ProcessEvents();
 		}
 
+		//ending loading screen
+		//set the timing
+		//load images, sounds, fonts and animation
+		//change the screen size
 		private static void EndLoadingScreen(int width, int height)
 		{
 			SwinGame.ProcessEvents();
@@ -224,10 +239,13 @@ namespace battleshipsgame
 			SwinGame.ChangeScreenSize(width, height);
 		}
 
+		//adding font, images, sound and music to library
+
 		private static void NewFont(string fontName, string filename, int size)
 		{
 			_Fonts.Add(fontName, SwinGame.LoadFont(SwinGame.PathToResource(filename, ResourceKind.FontResource), size));
 		}
+
 
 		private static void NewImage(string imageName, string filename)
 		{

@@ -4,7 +4,18 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Battleshipgame Status">
+    <Files>
+      <File FileName="DeploymentController.cs" Line="1" Column="1" />
+      <File FileName="DiscoveryController.cs" Line="1" Column="1" />
+      <File FileName="EndingGameController.cs" Line="1" Column="1" />
+      <File FileName="GameController.cs" Line="1" Column="1" />
+      <File FileName="GameLogic.cs" Line="1" Column="1" />
+      <File FileName="GameResources.cs" Line="1" Column="1" />
+      <File FileName="HighScoreController.cs" Line="1" Column="1" />
+      <File FileName="Battleshipgame Status" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.battleshipsgame PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

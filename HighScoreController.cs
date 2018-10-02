@@ -42,6 +42,11 @@ namespace battleshipsgame
 
 		private List<Score> _Scores = new List<Score>();
 
+		// <summary>
+		// Loads the high scores txt file
+		//get player name and input the name and convert score to integer number
+		// add score to Score list
+		// </summary>
 		private static void LoadScores()
 		{
 			string filename;
@@ -107,8 +112,7 @@ namespace battleshipsgame
 			SwinGame.DrawText("   High Scores   ", Color.White, GameFont("Courier"), SCORES_LEFT, SCORES_HEADING);
 			// For all of the scores
 			int i;
-			for (i = 0; (i
-						<= (_Scores.Count - 1)); i++)
+			for (i = 0; (i <= (_Scores.Count - 1)); i++)
 			{
 				Score s;
 				s = _Scores.Item[i];
