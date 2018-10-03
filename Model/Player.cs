@@ -230,14 +230,14 @@ namespace battleshipsgame
 
 			switch (result.Value)
 			{
-				case object _ when ResultOfAttack.Destroyed:
-            case object _ when ResultOfAttack.Hit:
+				case ResultOfAttack.Destroyed:
+            case ResultOfAttack.Hit:
                 {
 						_hits += 1;
 						break;
 					}
 
-				case object _ when ResultOfAttack.Miss:
+				case ResultOfAttack.Miss:
                 {
 						_misses += 1;
 						break;
