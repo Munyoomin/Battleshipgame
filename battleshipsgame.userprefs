@@ -6,7 +6,7 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="Battleshipgame Status">
     <Files>
-      <File FileName="DeploymentController.cs" Line="98" Column="5" />
+      <File FileName="DeploymentController.cs" Line="121" Column="11" />
       <File FileName="DiscoveryController.cs" Line="1" Column="1" />
       <File FileName="EndingGameController.cs" Line="33" Column="5" />
       <File FileName="GameController.cs" Line="1" Column="1" />
@@ -16,23 +16,11 @@
       <File FileName="..\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" Line="1097" Column="5" />
       <File FileName="MenuController.cs" Line="1" Column="1" />
       <File FileName="UtilityFunctions.cs" Line="1" Column="1" />
-      <File FileName="Model\AIHardPlayer.cs" Line="183" Column="16" />
-      <File FileName="Model\SeaGridAdapter.cs" Line="51" Column="39" />
+      <File FileName="Model\AIHardPlayer.cs" Line="34" Column="78" />
+      <File FileName="Model\SeaGridAdapter.cs" Line="52" Column="1" />
+      <File FileName="Model\Player.cs" Line="233" Column="10" />
       <File FileName="Battleshipgame Status" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="battleshipsgame" expanded="True">
-            <Node name="battleshipsgame" expanded="True">
-              <Node name="Model" expanded="True">
-                <Node name="SeaGridAdapter.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.battleshipsgame PreferredExecutionTarget="MonoDevelop.Default" />
