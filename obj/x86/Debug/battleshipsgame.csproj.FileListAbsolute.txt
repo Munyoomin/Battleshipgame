@@ -1,1 +1,2 @@
 C:\Users\100073798\Desktop\battleshipsgame\battleshipsgame\obj\x86\Debug\battleshipsgame.csprojResolveAssemblyReference.cache
+C:\Battleshipgame\obj\x86\Debug\battleshipsgame.csprojResolveAssemblyReference.cache
