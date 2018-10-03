@@ -4,7 +4,7 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Battleshipgame Status">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Model\AIHardPlayer.cs">
     <Files>
       <File FileName="DeploymentController.cs" Line="121" Column="11" />
       <File FileName="DiscoveryController.cs" Line="1" Column="1" />
@@ -16,9 +16,9 @@
       <File FileName="..\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" Line="1097" Column="5" />
       <File FileName="MenuController.cs" Line="1" Column="1" />
       <File FileName="UtilityFunctions.cs" Line="1" Column="1" />
-      <File FileName="Model\AIHardPlayer.cs" Line="34" Column="78" />
+      <File FileName="Model\AIHardPlayer.cs" Line="205" Column="6" />
       <File FileName="Model\SeaGridAdapter.cs" Line="52" Column="1" />
-      <File FileName="Model\Player.cs" Line="233" Column="10" />
+      <File FileName="Model\Player.cs" Line="238" Column="7" />
       <File FileName="Battleshipgame Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
