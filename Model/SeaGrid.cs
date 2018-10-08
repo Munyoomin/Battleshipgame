@@ -75,7 +75,7 @@ public bool AllDeployed
 	}
 }
 
-public DummyClass(Dictionary<ShipName, Ship> ships)
+	public void DummyClass(Dictionary<ShipName, Ship> ships)
 {
 	// fill array with empty Tiles
 	int i;

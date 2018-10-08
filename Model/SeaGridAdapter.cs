@@ -24,8 +24,7 @@ namespace battleshipsgame
 		public SeaGridAdapter(SeaGrid grid)
 		{
 			_MyGrid = grid;
-			_MyGrid.Changed += new EventHandler(// TODO: Warning!!!! NULL EXPRESSION DETECTED...
-        .);
+			_MyGrid.Changed += new EventHandler();
 		}
 
 		// '' <summary>
@@ -47,39 +46,35 @@ namespace battleshipsgame
 		public TileView this[int x, int y]
 		{
 		}
-	}
-	EndPropertyImplementsISeaGrid.Changed;
-Endclass Unknown
-	{
-	}
 
 
-	// '' <summary>
-	// '' Indicates that the grid has been changed
-	// '' </summary>
-	public event EventHandler Changed;
+		// '' <summary>
+		// '' Indicates that the grid has been changed
+		// '' </summary>
+		public event EventHandler Changed;
 
-	// '' <summary>
-	// '' Get the width of a tile
-	// '' </summary>
-	public int Width
-	{
-		get
+		// '' <summary>
+		// '' Get the width of a tile
+		// '' </summary>
+		public int Width
 		{
-			return _MyGrid.Width;
+			get
+			{
+				return _MyGrid.Width;
+			}
 		}
-	}
 
-	public int Height
-	{
-		get
+		public int Height
 		{
-			return _MyGrid.Height;
+			get
+			{
+				return _MyGrid.Height;
+			}
 		}
-	}
 
-	public AttackResult HitTile(int row, int col)
-	{
-		return _MyGrid.HitTile(row, col);
+		public AttackResult HitTile(int row, int col)
+		{
+			return _MyGrid.HitTile(row, col);
+		}
 	}
 }
