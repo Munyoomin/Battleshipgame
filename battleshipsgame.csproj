@@ -31,7 +31,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="SwinGame">
-      <HintPath>..\Users\100073798\Downloads\ProjectTemplate\lib\SwinGame.dll</HintPath>
+      <HintPath>..\Users\100073798\Downloads\CSharp_SwinGame_3_6_XAMARIANSTUDIO\ProjectTemplate\lib\SwinGame.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -41,7 +41,9 @@
     <Compile Include="EndingGameController.cs" />
     <Compile Include="GameController.cs" />
     <Compile Include="GameLogic.cs" />
-    <Compile Include="GameResources.cs" />
+    <Compile Include="GameResources.cs">
+      <IncludeInPackage>true</IncludeInPackage>
+    </Compile>
     <Compile Include="GameState.cs" />
     <Compile Include="HighScoreController.cs" />
     <Compile Include="MenuController.cs" />
@@ -57,7 +59,9 @@
     <Compile Include="Model\Player.cs" />
     <Compile Include="Model\ResultOfAttack.cs" />
     <Compile Include="Model\SeaGrid.cs" />
-    <Compile Include="Model\SeaGridAdapter.cs" />
+    <Compile Include="Model\SeaGridAdapter.cs">
+      <IncludeInPackage>true</IncludeInPackage>
+    </Compile>
     <Compile Include="Model\Ship.cs" />
     <Compile Include="Model\ShipName.cs" />
     <Compile Include="Model\Tile.cs" />
