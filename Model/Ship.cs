@@ -82,7 +82,7 @@ public class Ship
 		_shipName = ship;
 		_tiles = new List<Tile>();
 		// gets the ship size from the enumarator
-		_sizeOfShip = _shipName;
+			_sizeOfShip = (int)_shipName;
 	}
 
 	// '' <summary>
@@ -126,7 +126,7 @@ public class Ship
 
 	public bool IsDestroyed
 	{
-		get { return; }
+		get { return Hits == Size; }
 	}
 
 	internal void Deployed(Direction direction, int row, int col)

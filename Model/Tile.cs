@@ -15,15 +15,20 @@ namespace battleshipsgame
 public class Tile
 {
 
-	private int _RowValue;
+	private readonly int _RowValue;
 
-	private int _ColumnValue;
+	private readonly int _ColumnValue;
 
 	// the column value of the tile
 	private Ship _Ship = null;
 
 	private bool _Shot = false;
-
+/// <summary>
+/// Has the tile been shot?
+/// </summary>
+/// <value>indicate if the tile has been shot</value>
+/// <returns>true if the tile was shot</returns>
+/// 
 	public bool Shot
 	{
 		get
