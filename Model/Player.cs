@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
@@ -34,13 +33,13 @@ namespace battleshipsgame
 		public BattleShipsGame Game
 		{
 			get
-			{
-				return _game;
-			}
+		{
+			return _game;
+		}
 			set
-			{
-				_game = value;
-			}
+		{
+			_game = value;
+		}
 		}
 
 		/// <summary>
@@ -50,23 +49,23 @@ namespace battleshipsgame
 		public ISeaGrid Enemy
 		{
 			set
-			{
-				_enemyGrid = value;
-			}
+		{
+			_enemyGrid = value;
+		}
 		}
 
 		public Player(BattleShipsGame controller)
 		{
 			_game = controller;
 
-			// for each ship add the ships name so the seagrid knows about them
-			foreach (ShipName name in Enum.GetValues(typeof(ShipName)))
-			{
-				if (name != ShipName.None)
-					_Ships.Add(name, new Ship(name));
-			}
+		// for each ship add the ships name so the seagrid knows about them
+		foreach (ShipName name in Enum.GetValues(typeof(ShipName)))
+		{
+			if (name != ShipName.None)
+				_Ships.Add(name, new Ship(name));
+		}
 
-			RandomizeDeployment();
+			RandomizeDeployment())
 		}
 
 		/// <summary>
