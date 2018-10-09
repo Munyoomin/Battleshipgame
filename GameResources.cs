@@ -210,12 +210,14 @@ namespace battleshipsgame
 			int TH = 25;
 			int STEPS = 5;
 			int BG_X = 279;
-			int fullW;
-			fullW = (260 * number);
-			STEPS;
+			int fullW = 0;
+			fullW = 260 * number / STEPS;
+
 			SwinGame.DrawBitmap(_LoaderEmpty, BG_X, BG_Y);
 			SwinGame.DrawBitmapPart(_LoaderFull, 0, 0, fullW, 66, BG_X, BG_Y);
+
 			SwinGame.DrawTextLines(message, Color.White, Color.Transparent, _LoadingFont, FontAlignment.AlignCenter, TX, TY, TW, TH);
+
 			SwinGame.RefreshScreen();
 			SwinGame.ProcessEvents();
 		}
@@ -259,7 +261,7 @@ namespace battleshipsgame
 
 		private static void NewTransparentColourImage(string imageName, string fileName, Color transColor)
 		{
-			GameResources.NewTransparentColorImage(imageName, fileName, transColor);
+			NewTransparentColorImage(imageName, fileName, transColor);
 		}
 
 		private static void NewSound(string soundName, string filename)
@@ -274,8 +276,8 @@ namespace battleshipsgame
 
 		private static void FreeFonts()
 		{
-			Font obj;
-			foreach (obj in _Fonts.Values)
+			
+			foreach (Font obj in _Fonts.Values)
 			{
 				SwinGame.FreeFont(obj);
 			}
@@ -284,8 +286,7 @@ namespace battleshipsgame
 
 		private static void FreeImages()
 		{
-			Bitmap obj;
-			foreach (obj in _Images.Values)
+			foreach (Bitmap obj in _Images.Values)
 			{
 				SwinGame.FreeBitmap(obj);
 			}
@@ -294,8 +295,8 @@ namespace battleshipsgame
 
 		private static void FreeSounds()
 		{
-			SoundEffect obj;
-			foreach (obj in _Sounds.Values)
+			
+			foreach (SoundEffect obj in _Sounds.Values)
 			{
 				Audio.FreeSoundEffect(obj);
 			}
@@ -304,8 +305,7 @@ namespace battleshipsgame
 
 		private static void FreeMusic()
 		{
-			Music obj;
-			foreach (obj in _Music.Values)
+			foreach (Music obj in _Music.Values)
 			{
 				Audio.FreeMusic(obj);
 			}
@@ -314,10 +314,10 @@ namespace battleshipsgame
 
 		public static void FreeResources()
 		{
-			GameResources.FreeFonts();
-			GameResources.FreeImages();
-			GameResources.FreeMusic();
-			GameResources.FreeSounds();
+			FreeFonts();
+			FreeImages();
+			FreeMusic();
+			FreeSounds();
 			SwinGame.ProcessEvents();
 		}
 	}
